@@ -15,7 +15,7 @@ import {
 } from './lines.js';
 import { runCommand } from './commands.js';
 import { runExternalEditor } from './external-editor.js';
-import type { Db } from './db.js';
+import type { Store } from './store.js';
 import type { Flash, FlashKind, Mode, Stats, View } from './types.js';
 import { theme } from './theme.js';
 
@@ -23,7 +23,7 @@ import { theme } from './theme.js';
 const FIXED_ROWS = 8;
 
 interface Props {
-  db: Db;
+  db: Store;
 }
 
 interface ListItem {

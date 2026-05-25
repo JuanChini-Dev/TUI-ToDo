@@ -1,10 +1,10 @@
-import type { Db } from './db.js';
+import type { Store } from './store.js';
 import type { ExternalEditorResult } from './external-editor.js';
 import { parseEditorContent } from './external-editor.js';
 import type { FlashKind, Mode, View } from './types.js';
 
 export interface Ctx {
-  db: Db;
+  db: Store;
   mode: Mode;
   view: View;
   width: number;
